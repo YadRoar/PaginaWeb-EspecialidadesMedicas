@@ -1,9 +1,9 @@
 <div align="center">
 
-  # 🩺 Sistema de Servicios Médicos
+  # 🩺 Medical Services System
 
-  **Proyecto Académico — Curso de Programación Web**  
-  *Una plataforma web moderna para la gestión y prestación de servicios médicos integrados.*
+  **Academic Project — Web Programming Course**  
+  *A modern web platform for managing and delivering integrated medical services.*
 
   [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
   [![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
@@ -15,54 +15,54 @@
 
 ---
 
-## 📌 Acerca del Proyecto
+## 📌 About The Project
 
-Este proyecto consiste en el diseño e implementación de una aplicación web para la gestión de **servicios médicos**, desarrollada como parte del curso de **Programación Web** de la universidad. 
+This project consists of the design and implementation of a web application for managing **medical services**, developed as part of the **Web Programming** university course.
 
-La plataforma permite conectar a pacientes y personal médico en un entorno accesible, rápido y seguro, facilitando procesos clave como la consulta de catálogo de servicios, gestión de citas e información de contacto.
-
----
-
-## ✨ Características Principales
-
-* 🏥 **Catálogo de Servicios Médicos:** Presentación clara y detallada de las especialidades e intervenciones disponibles.
-* 📅 **Gestión de Citas:** Sistema para la reserva y consulta de citas médicas.
-* 👥 **Módulo de Pacientes / Doctores:** Perfiles orientados a mejorar la atención y seguimiento.
-* 📱 **Diseño Responsive:** Interfaz adaptada a dispositivos móviles, tablets y escritorio gracias a Bootstrap.
-* 🗄️ **Base de Datos Relacional:** Almacenamiento ágil y estructurado de la información médica con PostgreSQL.
+The platform connects patients and medical staff in an accessible, fast, and secure environment, streamlining core workflows such as browsing medical services, appointment scheduling, and contact management.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## ✨ Key Features
 
-| Categoría | Tecnología / Herramienta |
+* 🏥 **Medical Services Catalog:** Clear and detailed view of available specialties and procedures.
+* 📅 **Appointment Management:** Simple workflow to book and manage medical appointments.
+* 👥 **Patient & Doctor Modules:** Dedicated views tailored to improve user experience and clinical follow-up.
+* 📱 **Responsive Design:** Fully adaptable layout for desktop, tablet, and mobile devices built with Bootstrap.
+* 🗄️ **Relational Database:** Efficient and structured data storage powered by PostgreSQL.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology / Tool |
 | :--- | :--- |
 | **Backend** | Node.js, Express.js |
-| **Base de Datos** | PostgreSQL |
+| **Database** | PostgreSQL |
 | **Frontend** | HTML5, CSS3, JavaScript (ES6+), Bootstrap |
-| **Herramientas** | Git, GitHub, Postman, PgAdmin |
+| **Tools** | Git, GitHub, Postman, pgAdmin |
 
 ---
 
-## 📸 Capturas de Pantalla
+## 📸 Screenshots
 
-> *Añade aquí imágenes o GIFs del sitio para hacerlo mucho más visual.*
+> *Add images or GIFs of your live web app here to make it visually engaging.*
 
-| Inicio / Dashboard | Servicios Médicos |
+| Home / Dashboard | Medical Services |
 | :---: | :---: |
-| ![Inicio](https://via.placeholder.com/400x220?text=Captura+de+Inicio) | ![Servicios](https://via.placeholder.com/400x220?text=Captura+de+Servicios) |
+| ![Home](https://via.placeholder.com/400x220?text=Home+Screenshot) | ![Services](https://via.placeholder.com/400x220?text=Services+Screenshot) |
 
 ---
 
-## 🚀 Instalación y Configuración Local
+## 🚀 Local Installation & Setup
 
-Sigue estos pasos para ejecutar el proyecto en tu máquina local:
+Follow these steps to run the project locally on your machine:
 
-### 1. Requisitos Previos
-* Ten instalado [Node.js](https://nodejs.org/) (versión v16 o superior).
-* Ten instalado y configurado un servidor [PostgreSQL](https://www.postgresql.org/).
+### 1. Prerequisites
+* [Node.js](https://nodejs.org/) (v16 or higher).
+* [PostgreSQL](https://www.postgresql.org/) server installed and running.
 
-### 2. Clonar el Repositorio
+### 2. Clone the Repository
 ```bash
-git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
-cd tu-repositorio
+git clone [https://github.com/your-username/your-repository.git](https://github.com/your-username/your-repository.git)
+cd your-repository
