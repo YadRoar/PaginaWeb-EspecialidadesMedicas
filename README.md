@@ -43,7 +43,7 @@ The platform connects patients and medical staff in an accessible, fast, and sec
 | **Tools** | Git, GitHub, Postman, pgAdmin |
 
 ---
-
+##
 ## 📸 Screenshots
 
 > *Add images or GIFs of your live web app here to make it visually engaging.*
@@ -51,7 +51,7 @@ The platform connects patients and medical staff in an accessible, fast, and sec
 | Home / Dashboard | Medical Services |
 | :---: | :---: |
 | ![Home](https://via.placeholder.com/400x220?text=Home+Screenshot) | ![Services](https://via.placeholder.com/400x220?text=Services+Screenshot) |
-
+##
 ---
 
 ## 🚀 Local Installation & Setup
