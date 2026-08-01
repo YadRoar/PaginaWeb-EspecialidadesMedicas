@@ -1,24 +1,76 @@
-## 🚀 How to Run the Project Locally
+📋 Checklist de Requisitos Previos
+Antes de arrancar, necesitas tener estas 3 herramientas instaladas en tu computadora:
 
-If you are new to running Node.js applications or setting up this project for the first time on your PC, follow this step-by-step guide.
+Node.js (ya lo estás instalando).
 
----
+PostgreSQL (la base de datos donde se guarda la información).
 
-### 📋 Prerequisites
+Visual Studio Code (o tu editor de código preferido).
 
-Before getting started, make sure you have the following tools installed on your computer:
+🛠️ Paso 1: Instalar y verificar Node.js
+Termina de instalar Node.js desde la página oficial.
 
-1. **[Node.js](https://nodejs.org/)** (Version v16 or higher — includes `npm`).
-2. **[PostgreSQL](https://www.postgresql.org/download/)** (Database server to store medical records, services, and appointments).
-3. **[pgAdmin](https://www.pgadmin.org/)** (Optional, but recommended for managing your PostgreSQL database via GUI).
-4. **[Visual Studio Code](https://code.visualstudio.com/)** or your preferred code editor.
+Cierra todas las ventanas de PowerShell o VS Code que tengas abiertas (esto es clave para que Windows reconozca el nuevo programa).
 
----
+Abre una nueva consola de PowerShell y escribe:
 
-### 🛠️ Step-by-Step Setup Guide
-
-#### 1. Verify Node.js Installation
-After downloading and installing Node.js, restart your terminal or code editor, then run:
-```bash
+PowerShell
 node -v
-npm -v
+Si te responde con un número de versión (ej. v20.11.0), significa que quedó perfectamente instalado.
+
+🗄️ Paso 2: Tener PostgreSQL listo
+Como la página web consulta información médica (doctores, citas, usuarios), necesita conectarse a una base de datos.
+
+Si no tienes PostgreSQL instalado, descárgalo e instálalo desde postgresql.org.
+
+Durante la instalación te pedirá una contraseña para el usuario principal (postgres). ¡Apúntala bien, la vas a necesitar!
+
+Abre la herramienta pgAdmin (se instala junto con PostgreSQL) o la consola de Postgres, y crea una base de datos vacía para tu proyecto (por ejemplo, llamada servicios_medicos).
+
+Ejecuta el script .sql del proyecto (si el proyecto incluye algún archivo con tablas e información inicial).
+
+📁 Paso 3: Abrir el proyecto en la terminal
+Abre tu editor de código (como Visual Studio Code).
+
+Abre la carpeta del proyecto (Archivo > Abrir carpeta...).
+
+Abre la terminal integrada de VS Code (Terminal > Nueva Terminal o presionando Ctrl + Shift + ~).
+
+Asegúrate de estar parada en la ruta correcta de la carpeta.
+
+⚙️ Paso 4: Configurar variables y dependencias
+A) Instalar las librerías (Dependencias)
+Escribe el siguiente comando en la terminal de tu proyecto:
+
+PowerShell
+npm install
+¿Qué hace esto? Lee el archivo package.json de la carpeta y descarga automáticamente todas las librerías necesarias (como Express, Bootstrap, el conector de PostgreSQL, etc.) en una carpeta llamada node_modules.
+
+B) Configurar la conexión a la Base de Datos
+Busca si en la carpeta del proyecto existe un archivo llamado .env.example o .env. Si no existe, crea un archivo nuevo llamado .env en la raíz del proyecto y pon tus credenciales de PostgreSQL:
+
+Code snippet
+PORT=3000
+DB_HOST=localhost
+DB_USER=postgres
+DB_PASSWORD=tu_contraseña_de_postgres
+DB_NAME=servicios_medicos
+DB_PORT=5432
+🚀 Paso 5: ¡Correr la aplicación!
+Una vez instalado todo y configurado el archivo .env, ejecuta en la terminal:
+
+PowerShell
+npm start
+(O en su defecto node index.js / node app.js, dependiendo de cómo esté configurado tu archivo principal).
+
+Si todo está bien, verás un mensaje en la terminal como:
+
+Servidor corriendo en el puerto 3000
+
+Conexión a la base de datos exitosa
+
+🌐 ¡Abre tu navegador!
+Abre Google Chrome o tu navegador preferido e ingresa a:
+http://localhost:3000
+
+¡Listo! Ahí verás tu página de servicios médicos funcionando en tu propia computadora.
